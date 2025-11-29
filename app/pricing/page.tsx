@@ -2,7 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, Sparkles, Zap, Building2, Shield, Clock, FileText, Users } from "lucide-react"
+import { Check, Sparkles, Zap, Shield, Clock, FileText, Users, Network, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 const plans = [
@@ -16,8 +16,8 @@ const plans = [
       "1 ta tekshirish/kun",
       "Asosiy tahlil",
       "URL va matn tekshirish",
-      "Email qo'llab-quvvatlash",
-      "Web interfeys",
+      "Elektron pochta qo'llab-quvvatlash",
+      "Veb interfeys",
     ],
     cta: "Boshlash",
     highlight: false,
@@ -26,7 +26,7 @@ const plans = [
     name: "Pro",
     price: "5",
     period: "/oy",
-    description: "Professional foydalanuvchilar uchun",
+    description: "Kasbiy foydalanuvchilar uchun",
     icon: Zap,
     features: [
       "100 ta tekshirish/kun",
@@ -42,21 +42,71 @@ const plans = [
     highlight: true,
   },
   {
-    name: "Enterprise",
-    price: "Maxsus",
-    period: "",
-    description: "Katta tashkilotlar uchun",
-    icon: Building2,
+    name: "Pro Plus",
+    price: "25",
+    period: "/oy",
+    description: "Turli sanoat tashkilotlari uchun",
+    icon: Network,
     features: [
-      "Cheksiz tekshirish",
-      "Maxsus AI model",
-      "Dedicated support manager",
-      "99.9% SLA kafolati",
-      "On-premise deploy",
-      "Team management va rollar",
-      "SSO / SAML",
-      "Maxsus integratsiya",
-      "Korporativ trening",
+      "500 ta tekshirish/kun",
+      "Korporativ email xavfsizligi (97.5% aniqlik)",
+      "API va tarmoq monitoring (92% aniqlik)",
+      "GDPR, CCPA qonuniy talablarga moslik (100%)",
+      "Ishchilar tayyorlash va ogohlantirish",
+      "85% kamaytirilgan inson xatolari",
+      "3x ko'paytirilgan xavfsizlik ongi",
+      "Real vaqt rejimida dashboard",
+      "Korporativ tarmoq integratsiyasi",
+      "BEC (Biznes email firibgarligi) himoyasi",
+      "78% kamaytirilgan email hujumlar",
+      "65% tezroq xavfni bartaraf etish",
+      "287 kundan 45 kunga tiklanish",
+      "Maxsus hisob menejeri",
+      "Birinchi darajali qo'llab-quvvatlash",
+      "Maxsus brending va o'z brendingi",
+      "90 kun tarix saqlash",
+      "Kengaytirilgan tahlil va hisobotlar",
+      "Jamoa hamkorligi vositalari",
+      "Ko'p foydalanuvchi kirishi va rollar",
+    ],
+    cta: "Hozir boshlang",
+    highlight: false,
+  },
+  {
+    name: "Pro Max",
+    price: "50",
+    period: "/oy",
+    description: "Banklar uchun",
+    icon: CreditCard,
+    features: [
+      "2000 ta tekshirish/kun",
+      "Real vaqt rejimida tranzaksiya tahlili (99.2% aniqlik)",
+      "AI-ga asoslangan kredit scoring (87% aniqlik)",
+      "Biometrik identifikatsiya (98.7% aniqlik)",
+      "Core-banking integratsiyasi (95%+ muvaffaqiyat)",
+      "99.9% xizmat ko'rsatish kafolati",
+      "50ms dan kam javob vaqti",
+      "87% kamaytirilgan noto'g'ri qarorlar",
+      "40% kamaytirilgan qaytmas kreditlar",
+      "94% kamaytirilgan identifikatsiya xatolari",
+      "92% ga kamaytirilgan session o'g'irlash",
+      "PCI DSS, GDPR qonuniy talablarga moslik (100%)",
+      "Voqeaga asoslangan va REST API integratsiyalari",
+      "Real vaqt rejimida monitoring va ogohlantirishlar",
+      "Kengaytirilgan firibgarlik aniqlash",
+      "Kredit risklarini boshqarish",
+      "Biometrik autentifikatsiya (ovoz + yuz)",
+      "Session o'g'irlashdan himoya",
+      "Maxsus xavfsizlik jamoasi",
+      "24/7 birinchi darajali qo'llab-quvvatlash",
+      "Maxsus AI model o'qitish",
+      "On-premise o'rnatish imkoniyati",
+      "SSO / SAML integratsiyasi",
+      "180 kun tarix saqlash",
+      "To'liq audit jurnallari",
+      "Qonuniy talablarga moslik hisobotlari",
+      "Bank darajasidagi shifrlash",
+      "Falokatdan tiklash va zaxiralash",
     ],
     cta: "Bog'lanish",
     highlight: false,
@@ -113,7 +163,7 @@ export default function PricingPage() {
       {/* Pricing Cards */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {plans.map((plan) => {
               const Icon = plan.icon
               return (
