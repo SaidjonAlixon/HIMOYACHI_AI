@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   // Updated metadata for HIMOYACHI AI
   title: "HIMOYACHI AI — Firibgarlikdan himoya",
   description: "Real vaqt rejimida phishing va scam xavflarini aniqlash platformasi",
-  generator: "v0.app",
   icons: {
     icon: [
       {
