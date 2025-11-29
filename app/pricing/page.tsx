@@ -142,11 +142,11 @@ export default function PricingPage() {
                     <CardDescription className="text-base text-muted-foreground">{plan.description}</CardDescription>
                     <div className="mt-6 flex items-baseline gap-1">
                       {plan.price === "Maxsus" ? (
-                        <span className="text-4xl font-bold text-card-foreground">{plan.price}</span>
+                        <span className="text-4xl font-bold text-card-foreground blur-sm opacity-30 select-none">{plan.price}</span>
                       ) : (
                         <>
-                          <span className="text-5xl font-bold text-card-foreground">${plan.price}</span>
-                          <span className="text-lg text-muted-foreground">{plan.period}</span>
+                          <span className="text-5xl font-bold text-card-foreground blur-sm opacity-30 select-none">${plan.price}</span>
+                          <span className="text-lg text-muted-foreground blur-sm opacity-30 select-none">{plan.period}</span>
                         </>
                       )}
                     </div>
