@@ -31,6 +31,7 @@ export function Header() {
     { href: "/pricing", label: "NARXLAR" },
     { href: "/about", label: "BIZ HAQIMIZDA" },
     { href: "/solutions", label: "MUAMMO VA YECHIM" },
+    { href: "/biz-bilan-siz", label: "BIZ BILAN SIZ" },
   ]
 
   const isHomePage = pathname === "/"
@@ -130,6 +131,14 @@ export function Header() {
           </Button>
         </div>
       </div>
+      {/* Ogohlantirish xabari - faqat bosh sahifada */}
+      {pathname === "/" && (
+        <div className="w-full overflow-hidden bg-destructive/10 border-t border-destructive/20">
+          <div className="animate-marquee whitespace-nowrap text-xs font-semibold text-destructive py-2">
+            ⚠️ Sayt test rejimida ishlamoqda, hali barcha imkoniyatlar qo'shilmagan, faqat holatni ko'rishingiz mumkin. Tez orada to'liq holatda ishga tushuriladi! ⚠️ Sayt test rejimida ishlamoqda, hali barcha imkoniyatlar qo'shilmagan, faqat holatni ko'rishingiz mumkin. Tez orada to'liq holatda ishga tushuriladi!
+          </div>
+        </div>
+      )}
     </header>
   )
 }

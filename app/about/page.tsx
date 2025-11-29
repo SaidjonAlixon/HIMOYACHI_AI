@@ -1,4 +1,17 @@
-import { Target, Users, Zap, Globe, Linkedin, Mail } from "lucide-react"
+import {
+  Target,
+  Users,
+  Zap,
+  Globe,
+  Linkedin,
+  Mail,
+  ShieldCheck,
+  BrainCircuit,
+  Network,
+  CreditCard,
+  ScanFace,
+  Mic,
+} from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -28,35 +41,80 @@ export default function AboutPage() {
 
         <section className="border-y border-border/40 bg-muted/30 py-16">
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-4xl">
-              <h2 className="mb-12 text-center text-3xl font-bold">Bizning Missiyamiz</h2>
+            <div className="mx-auto max-w-5xl space-y-10">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl font-bold">
+                  Nega aynan HIMOYACHI AI jamoasi bu muammoni hal qila oladi?
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Bizning missiyamiz — har bir foydalanuvchini kiberxavflardan himoya qiladigan, firibgarlik
+                  stsenariylarini chuqur tahlil qiluvchi va eng so&apos;nggi AI texnologiyalariga tayangan, shu bilan birga
+                  oddiy va qulay ishlatiladigan xavfsizlik ekotizimini yaratishdir.
+                </p>
+              </div>
+
               <div className="grid gap-8 md:grid-cols-3">
-                <Card className="border-border/50">
-                  <CardContent className="pt-6">
-                    <Target className="mb-4 h-12 w-12 text-primary" />
-                    <h3 className="mb-2 text-xl font-semibold">Himoya</h3>
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <Target className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">Himoya va ishonch</h3>
                     <p className="text-muted-foreground">
-                      Har bir internetdan foydalanuvchini kiberhujumlardan himoya qilish
+                      Har bir internet foydalanuvchisini phishing, firibgarlik va boshqa kiberhujumlardan
+                      real vaqt rejimida himoya qilish — loyihaning asosiy maqsadi.
                     </p>
                   </CardContent>
                 </Card>
-
-                <Card className="border-border/50">
-                  <CardContent className="pt-6">
-                    <Zap className="mb-4 h-12 w-12 text-primary" />
-                    <h3 className="mb-2 text-xl font-semibold">Innovatsiya</h3>
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <Zap className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">Innovatsion AI yondashuvi</h3>
                     <p className="text-muted-foreground">
-                      Eng so'nggi AI texnologiyalaridan foydalanib xavfsizlikni oshirish
+                      Eng so&apos;nggi AI va mashinali o&apos;qitish texnologiyalaridan foydalanib, yangi tahdidlarni
+                      tezda aniqlay oladigan moslashuvchan model va algoritmlar yaratamiz.
                     </p>
                   </CardContent>
                 </Card>
-
-                <Card className="border-border/50">
-                  <CardContent className="pt-6">
-                    <Globe className="mb-4 h-12 w-12 text-primary" />
-                    <h3 className="mb-2 text-xl font-semibold">Qulaylik</h3>
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <Globe className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">Qulay va tushunarli xizmat</h3>
                     <p className="text-muted-foreground">
-                      Murakkab xavfsizlik vositalarini oddiy va foydalanish uchun qulay qilish
+                      Murakkab xavfsizlik infratuzilmasini foydalanuvchi uchun bir nechta bosqichda ishlatiladigan,
+                      sodda va intuitiv interfeys orqali taqdim etamiz.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="grid gap-8 md:grid-cols-3">
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <ShieldCheck className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">Amaliy tajriba</h3>
+                    <p className="text-muted-foreground">
+                      Jamoamiz a&apos;zolari AI, backend, frontend va UI/UX yo&apos;nalishlarida yirik platformalar
+                      uchun ishlagan, real kiberhujum holatlarini ko&apos;rgan va ularni bartaraf etish bo&apos;yicha
+                      yechimlar ishlab chiqqan.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <BrainCircuit className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">Ma&apos;lumotga asoslangan tahlil</h3>
+                    <p className="text-muted-foreground">
+                      Phishing va firibgarlik sxemalarini minglab namunalar asosida tahlil qilib, yolg&apos;on
+                      pozitiv va negativ holatlarni keskin kamaytiradigan aniqlik darajasiga erishamiz.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="border-border/50 h-full">
+                  <CardContent className="pt-6 space-y-3">
+                    <Network className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-semibold">To&apos;liq ekotizim va rivojlanish</h3>
+                    <p className="text-muted-foreground">
+                      Foydalanuvchi interfeysi, API, monitoring va xavfsizlik siyosatlari yagona ekotizimda
+                      ishlaydi va yangi tahdidlarga mos ravishda doimiy ravishda yangilanib boriladi.
                     </p>
                   </CardContent>
                 </Card>
@@ -118,7 +176,7 @@ export default function AboutPage() {
                           <h4 className="text-xl font-bold">Ataullayev Saidmuhammadalixon</h4>
                           <p className="text-sm text-primary">Asoschi & CEO</p>
                           <p className="mt-2 text-sm text-muted-foreground">
-                            2+ yillik tajriba, Sun'iy intellekt, avtomatlashtirish va xavfsizlik yechimlari bo‘yicha yosh mutaxassis.
+                            2+ yillik tajriba, Sun&apos;iy intellekt, avtomatlashtirish va xavfsizlik yechimlari bo&apos;yicha yosh mutaxassis, Fullstack dasturchi.
                           </p>
                         </div>
                       </div>
@@ -144,7 +202,7 @@ export default function AboutPage() {
                       <div className="mb-4 flex items-start gap-4">
                         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
                           <img
-                            src="/team/Azimov.jpg"
+                            src="/team/Azimov.png?v=2"
                             alt="Azimov Sherxon"
                             className="h-full w-full rounded-full object-cover"
                           />
@@ -153,7 +211,7 @@ export default function AboutPage() {
                           <h4 className="text-xl font-bold">Azimov Sherxon</h4>
                           <p className="text-sm text-primary">Hammuassis & CTO</p>
                           <p className="mt-2 text-sm text-muted-foreground">
-                          5+ yillik tajriba, AI va mashinali o'qitish yo'nalishlarida chuqur bilimga ega texnik mutaxassis.
+                            5+ yillik tajriba, AI va mashinali o&apos;qitish yo&apos;nalishlarida chuqur bilimga ega texnik mutaxassis.
                           </p>
                         </div>
                       </div>
@@ -184,16 +242,16 @@ export default function AboutPage() {
                       <div className="mb-4 flex items-start gap-4">
                         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-muted">
                           <img
-                            src="/professional-male-developer.jpg"
-                            alt="Sardor Rashidov"
+                            src="/team/Ustenov.jpg"
+                            alt="Ustenov Aziz"
                             className="h-full w-full rounded-full object-cover"
                           />
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-xl font-bold">Sardor Rashidov</h4>
+                          <h4 className="text-xl font-bold">Ustenov Aziz</h4>
                           <p className="text-sm text-muted-foreground">Backend Muhandis</p>
                           <p className="mt-2 text-sm text-muted-foreground">
-                            Tizim arxitekturasi va API ishlab chiqish bo'yicha 5 yillik tajriba.
+                            Tizim arxitekturasi va API ishlab chiqish bo&apos;yicha bililmlarga ega.
                           </p>
                         </div>
                       </div>
@@ -219,13 +277,13 @@ export default function AboutPage() {
                       <div className="mb-4 flex items-start gap-4">
                         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-muted">
                           <img
-                            src="/professional-female-designer.png"
-                            alt="Madina Alimova"
+                            src="/team/Zayniyev.jpg"
+                            alt="Zayniyev Ilhomjon"
                             className="h-full w-full rounded-full object-cover"
                           />
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-xl font-bold">Madina Alimova</h4>
+                          <h4 className="text-xl font-bold">Zayniyev Ilhomjon</h4>
                           <p className="text-sm text-muted-foreground">UX/UI Dizayner</p>
                           <p className="mt-2 text-sm text-muted-foreground">
                             Foydalanuvchi tajribasi va vizual dizayn mutaxassisi. Zamonaviy interfeys yaratuvchi.
@@ -253,7 +311,7 @@ export default function AboutPage() {
 
               <div className="mt-12 text-center">
                 <Button asChild size="lg">
-                  <Link href="/careers">Jamoaga Qo'shiling</Link>
+                  <Link href="/careers">Jamoaga Qo&apos;shiling</Link>
                 </Button>
               </div>
             </div>
