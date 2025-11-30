@@ -26,7 +26,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/pricing" className="hover:text-foreground transition-colors">
-                  Narxlar
+                  Tariflar
                 </Link>
               </li>
               <li>

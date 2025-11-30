@@ -101,7 +101,7 @@ export default function TermsPage() {
                 <div>
                   <h3 className="mb-2 font-semibold text-foreground">To'lovlar</h3>
                   <p>
-                    Pullik rejalar uchun to'lovlar oldindan amalga oshiriladi. Narxlar veb-saytda ko'rsatilgan va
+                    Pullik rejalar uchun to'lovlar oldindan amalga oshiriladi. Tariflar veb-saytda ko'rsatilgan va
                     vaqti-vaqti bilan o'zgarishi mumkin.
                   </p>
                 </div>

@@ -28,7 +28,7 @@ export function Header() {
     { href: "/", label: "BOSH SAHIFA" },
     { href: "/scan", label: "TEKSHIRISH" },
     { href: "/history", label: "TARIX" },
-    { href: "/pricing", label: "NARXLAR" },
+    { href: "/pricing", label: "TARIFLAR" },
     { href: "/about", label: "BIZ HAQIMIZDA" },
     { href: "/solutions", label: "MUAMMO VA YECHIM" },
     { href: "/biz-bilan-siz", label: "BIZ BILAN SIZ" },

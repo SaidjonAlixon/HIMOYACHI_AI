@@ -817,7 +817,7 @@ export default function SolutionsPage() {
                           <strong className="text-primary"> $2.3M tejamkorlik</strong> qiladi yiliga.
                         </p>
                       </div>
-                      <div>
+            <div>
                         <p className="text-sm text-muted-foreground">
                           <strong className="text-foreground">Firibgarlik operatsiyalarini oldini olish:</strong> 
                           <strong className="text-primary"> $450K-1.2M</strong> yo'qotilishi mumkin bo'lgan mablag'larni oldini olish.
@@ -876,7 +876,7 @@ export default function SolutionsPage() {
                     <p className="text-muted-foreground">
                       Ha, bizning platformada bepul reja mavjud. Bepul rejada kuniga 10 ta tekshirish imkoniyati 
                       beriladi. Professional va Enterprise rejalarida ko'proq imkoniyatlar mavjud. 
-                      <Link href="/pricing" className="text-primary hover:underline ml-1">Narxlar bo'limini ko'ring</Link>.
+                      <Link href="/pricing" className="text-primary hover:underline ml-1">Tariflar bo'limini ko'ring</Link>.
                     </p>
                   </CardContent>
                 </Card>

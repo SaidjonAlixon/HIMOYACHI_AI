@@ -147,7 +147,7 @@ export default function PricingPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
               <Sparkles className="h-4 w-4" />
-              Narxlar va Rejalar
+              Tariflar va Rejalar
             </div>
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-balance md:text-5xl lg:text-6xl">
               O'zingizga mos rejani tanlang
@@ -302,19 +302,6 @@ export default function PricingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-border bg-card">
-                <CardHeader>
-                  <CardTitle className="text-lg text-card-foreground">
-                    Enterprise reja nimani o'z ichiga oladi?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Enterprise reja sizning maxsus ehtiyojlaringizga moslashtiriladi: cheksiz tekshirish, maxsus AI
-                    model, on-premise deploy, SSO va ko'p boshqa imkoniyatlar.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
