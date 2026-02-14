@@ -209,6 +209,42 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </div>
+                <div className="mt-8 flex justify-center">
+                  <Card className="w-full max-w-md border-2 border-[rgba(0,255,65,0.3)] bg-black/40 transition-all hover:shadow-[0_0_20px_rgba(0,255,65,0.15)]">
+                    <CardContent className="p-6">
+                      <div className="mb-4 flex items-start gap-4">
+                        <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[rgba(0,255,65,0.15)]">
+                          <img
+                            src="/team/Ustenov.jpg"
+                            alt="Ustenov Azbek"
+                            className="h-full w-full object-cover object-[center_25%] scale-150"
+                          />
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <h4 className="text-xl font-bold text-white">Ustenov Azbek</h4>
+                          <p className="text-sm text-[#00ff41]">Yordamchi dasturchi hamda dizayner</p>
+                          <p className="mt-2 text-sm text-white/80">
+                            Frontend dasturlash va UI/UX dizayn bo&apos;yicha yordamchi. Loyiha interfeysi, foydalanuvchi tajribasi va vizual yechimlarni yaxshilashda faol ishtirok etadi.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3 border-t border-[rgba(0,255,65,0.2)] pt-4">
+                        <Button size="sm" variant="outline" asChild className="border-[#00ff41] text-[#00ff41] hover:bg-[rgba(0,255,65,0.1)]">
+                          <a href="mailto:azbek@himoyachi.ai">
+                            <Mail className="mr-2 h-4 w-4" />
+                            Email
+                          </a>
+                        </Button>
+                        <Button size="sm" variant="outline" asChild className="border-[#00ff41] text-[#00ff41] hover:bg-[rgba(0,255,65,0.1)]">
+                          <a href="#" target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="mr-2 h-4 w-4" />
+                            LinkedIn
+                          </a>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
 
               <div className="mt-12 text-center">
