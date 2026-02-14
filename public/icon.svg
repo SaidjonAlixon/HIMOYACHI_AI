@@ -1,0 +1,17 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .background { fill: white; }
+      .shield { fill: #4A90E2; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #0A0E27; }
+      .shield { fill: #6BA3F5; }
+    }
+  </style>
+    <rect class="background" width="180" height="180" rx="37" />
+  <g transform="translate(30, 30)">
+    <path class="shield" d="M60 10L30 20L30 50C30 70 40 85 60 100C80 85 90 70 90 50L90 20L60 10Z" fill-rule="evenodd" stroke="none" stroke-width="2"/>
+    <path class="shield" d="M50 45L45 50L50 55L70 55L75 50L70 45L50 45Z" fill="white" opacity="0.9"/>
+  </g>
+</svg>
